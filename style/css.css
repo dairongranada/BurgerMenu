@@ -1,0 +1,128 @@
+*{
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    text-decoration: none;
+    color: #000;
+}
+
+/* VARIABLES COLORES  */
+:root{
+    --colorNegro: #000;
+    --colorBlanco: #fff;
+    --colorGris: #b0b0b0;
+    --colorVerde: #17FF00;
+    --colorRojo: #FF0C0C;
+    --colorAzul: #0040FF;
+}
+
+body{
+    background-color: #FFF;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/*===============================================================================================================*/
+/*  ============================     B A R R A    D E   N A V E G A C I O N          ============================*/
+nav {
+    background-color: var(--colorNegro);
+    color: var(--colorBlanco);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainMenu {
+    display: flex;
+}
+
+.mainMenu li a {
+    color: var(--colorBlanco);
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+.mainMenu li a:hover {
+    color: var(--colorGris);
+}
+
+.fa-bars{
+    color: var(--colorBlanco);
+}
+.openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.closeMenu{
+    color: var(--colorBlanco);
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.TextNav h2{
+    color: var(--colorGris);
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+.fa-times{
+    color: var(--colorBlanco);
+}
+.mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+}
+.mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.openMenu {
+    display: block;
+}
+
+.mainMenu li a {
+    padding: 16px;
+    font-size: 30px;
+}
+.mainMenu li a:hover {
+    color: var(--colorGris);
+}
+
+}
+
+/* //  CLASE PARA BOTONES   // */
+.botonesGlobales{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size:15px;
+    margin: 10px 0 ;
+}
